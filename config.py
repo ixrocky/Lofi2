@@ -21,10 +21,6 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 # Chat id of a group for logging bot's activities
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
 
-# Vars For API End Pont.
-API_URL = getenv("API_URL", 'https://api2.nexgenbots.xyz') #youtube song url
-API_KEY = getenv("API_KEY", "NxGBNexGenBotsbb404a") # youtube song api key, get it from https://t.me/MR_ROCKY_TZ
-
 # Get this value from @MissRose_Bot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", None)) 
 ## Fill these variables if you're deploying on heroku.
@@ -82,6 +78,9 @@ votemode = {}
 autoclean = []
 confirmer = {}
 
+API_URL = getenv("API_URL")
+API_KEY = getenv("API_KEY")
+DOWNLOADS_DIR = "downloads"
 
 START_IMG_URL = getenv(
     "START_IMG_URL", "https://files.catbox.moe/p9x117.jpg"
