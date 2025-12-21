@@ -21,6 +21,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 # Chat id of a group for logging bot's activities
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
 
+# Vars For API End Pont.
+YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
+YT_API_KEY = getenv("YT_API_KEY" , None ) ## Your API key like: xbit_DU1DE00pVbT1qD5ktMNHAh0tZTtkcVv0 Get from  https://t.me/tgmusic_apibot
+
 # Get this value from @MissRose_Bot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", None)) 
 ## Fill these variables if you're deploying on heroku.
@@ -38,8 +42,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", ""
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHAT", "https://t.me/+e3xvuqqYd2lkZGY1")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/RockyXUpdate")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHAT", "https://t.me/govobots")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/govobots")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -77,10 +81,6 @@ lyrical = {}
 votemode = {}
 autoclean = []
 confirmer = {}
-
-API_URL = getenv("API_URL", "https://tgmusic.fallenapi.fun")
-API_KEY = getenv("API_KEY", "c0a054_fW2vswuUzMhw6isuc0xDqT53FovQF5AF")
-DOWNLOADS_DIR = "downloads"
 
 START_IMG_URL = getenv(
     "START_IMG_URL", "https://files.catbox.moe/p9x117.jpg"
