@@ -78,8 +78,8 @@ votemode = {}
 autoclean = []
 confirmer = {}
 
-API_URL = getenv("API_URL")
-API_KEY = getenv("API_KEY")
+API_URL = getenv("https://tgmusic.fallenapi.fun")
+API_KEY = getenv("c0a054_fW2vswuUzMhw6isuc0xDqT53FovQF5AF")
 DOWNLOADS_DIR = "downloads"
 
 START_IMG_URL = getenv(
