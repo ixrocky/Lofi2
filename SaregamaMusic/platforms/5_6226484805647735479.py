@@ -5,9 +5,9 @@ from typing import Union
 import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
-from ShrutiMusic.utils.formatters import time_to_seconds
+from SaregamaMusic.utils.formatters import time_to_seconds
 import aiohttp
-from ShrutiMusic import LOGGER
+from SaregamaMusic import LOGGER
 
 try:
     from py_yt import VideosSearch
@@ -19,7 +19,7 @@ FALLBACK_API_URL = "https://shrutibots.site"
 
 async def load_api_urls():
     global API_URLS
-    logger = LOGGER("ShrutiMusic.platforms.Youtube.py")
+    logger = LOGGER("SaregamaMusic.platforms.Youtube.py")
     
     loaded_urls = []
     
